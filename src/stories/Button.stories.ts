@@ -15,7 +15,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const LightBlue: Story = {
+export const ClickableButton: Story = {
   args: {
     label: 'Button',
     backgroundColor: '#61ECFF',
@@ -25,8 +25,9 @@ export const LightBlue: Story = {
     borderRadius: 20,
     width: 145,
     height: 45,
+    onPress: () => alert('Clicked!')
   },
-};
+}
 
 export const Default: Story = {
   args: {

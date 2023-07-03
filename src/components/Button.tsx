@@ -36,6 +36,7 @@ const Button: React.FC<ButtonProps> = ({
         borderRadius: borderRadius,
         width: width,
         height: height,
+        border: "None",
       }}
     >
       {label}
@@ -44,7 +45,7 @@ const Button: React.FC<ButtonProps> = ({
 };
 
 Button.defaultProps = {
-  backgroundColor: "#FF61F9",
+  backgroundColor: "#61ECFF",
   fontColor: "#000000",
   fontWeight: 600,
   fontSize: 20,
