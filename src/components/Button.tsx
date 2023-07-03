@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Button.css";
+import "src/styles/Button.css";
 
 interface ButtonProps {
   label: string;
@@ -11,6 +11,7 @@ interface ButtonProps {
   borderRadius?: number;
   backgroundColor?: string;
   onPress?: any;
+  animation?: string;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -23,6 +24,7 @@ const Button: React.FC<ButtonProps> = ({
   borderRadius,
   backgroundColor,
   onPress,
+  animation,
 }: ButtonProps) => {
   return (
     <button
@@ -36,7 +38,6 @@ const Button: React.FC<ButtonProps> = ({
         borderRadius: borderRadius,
         width: width,
         height: height,
-        border: "None",
       }}
     >
       {label}
@@ -52,6 +53,7 @@ Button.defaultProps = {
   borderRadius: 20,
   width: 145,
   height: 45,
+  animation: "default",
 };
 
 export default Button;
