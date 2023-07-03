@@ -25,7 +25,8 @@ export const ClickableButton: Story = {
     borderRadius: 20,
     width: 145,
     height: 45,
-    onPress: () => alert('Clicked!')
+    onPress: () => alert('Clicked!'),
+    animation: 'default'
   },
 }
 

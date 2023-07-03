@@ -1,5 +1,5 @@
 import React from "react";
-import "src/styles/Button.css";
+import "../styles/Button.css";
 
 interface ButtonProps {
   label: string;
@@ -28,7 +28,7 @@ const Button: React.FC<ButtonProps> = ({
 }: ButtonProps) => {
   return (
     <button
-      className="Button"
+      className={["Button", "animation-" + animation].join(" ")}
       onClick={onPress}
       style={{
         backgroundColor: backgroundColor,
